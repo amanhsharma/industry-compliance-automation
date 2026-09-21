@@ -1,0 +1,13 @@
+{
+  "name": "apex-compliance-platform",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Multi-Tenant Enterprise Compliance Platform",
+  "scripts": {
+    "dev": "npm --prefix frontend run dev",
+    "build": "npm --prefix frontend run build",
+    "backend": "python -m uvicorn app.main:app --reload --port 8000 --app-dir backend",
+    "seed": "python backend/seed.py",
+    "test": "pytest"
+  }
+}
